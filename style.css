@@ -170,7 +170,42 @@ header .row {
     align-items: center;
     justify-content: space-between;
 }
-
+@media (min-width: 1025px) {
+.header__description {
+    flex: 0 0 40%;
+  }
+  header h1 {
+    font-size: 48px;
+    line-height: 1.25;
+  }
+}
+.header__description--para {
+  margin: 32px 0;
+  line-height: 1.5;
+}
+.header__email {
+  display: flex;
+  max-width: 448px;
+  padding: 6px;
+  border: 2px solid #a0aec0;
+  border-radius: 40px;
+}
+.header__email--input {
+  flex: 1;
+  min-width: 0;
+  padding-left: 24px;
+  border: 0;
+  border-radius: 40px;
+}
+.header__email--btn,
+.nav__link--primary {
+  padding: 12px 32px;
+  border: 0;
+  border-radius: 40px;
+  background: #6415ff;
+  color: white;
+  font-weight: 700;
+}
 #features {
     position: relative;
 }
@@ -179,6 +214,23 @@ header .row {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.features {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.feature__row {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 32px 8px;
+        padding-top: 32px;
+        padding-right: 8px;
+        padding-bottom: 32px;
+        padding-left: 8px;
 }
 
 #quality .row {
@@ -214,7 +266,7 @@ header .row {
     align-items: center;
 }
 
-icing .row {
+#pricing .row {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -288,14 +340,13 @@ footer {
     .plans {
         position: relative;
     }
-    .plans__blob {
+    .plans__blob, 
         position: absolute;
         bottom: 0;
         left: 0;
         width: 80px;
         height: auto;
         z-index: -1;
-    }
     }
     #steps .row,
     #testimonials .row {
@@ -305,7 +356,7 @@ footer {
     #pricing .row {
         margin-top: 40px;
     }
-
+}
 @media(max-width: 640px) {
     .container {
         padding: 80px 0;
