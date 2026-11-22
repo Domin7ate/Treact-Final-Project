@@ -892,3 +892,14 @@ footer {
     display: block;
   }
 }
+@media (max-width: 768px) {
+  #pricing .plans {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin: 48px auto 0;
+  }
+
+  #pricing .plan {
+    width: 100%;
+  }
+}
