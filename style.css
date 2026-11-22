@@ -57,6 +57,7 @@ nav {
 .nav__row {
     display: flex;
     justify-content: space-between;
+    padding: 32px 8px;
 }
 
 .nav__logo {
@@ -227,10 +228,54 @@ header .row {
     align-items: flex-start;
     gap: 16px;
     padding: 32px 8px;
-        padding-top: 32px;
-        padding-right: 8px;
-        padding-bottom: 32px;
-        padding-left: 8px;
+}
+#features .section__tag {
+  color: #6415ff;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+#features .section__title {
+  font-size: 48px;
+  text-align: center;
+  margin: 16px 0;
+}
+
+#features .section__para {
+  max-width: 600px;
+  text-align: center;
+  color: #718096;
+  line-height: 1.6;
+}
+
+.features {
+  margin-top: 48px;
+}
+
+.feature__img--wrapper {
+  width: 56px;
+  height: 56px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #e2e8f0;
+  border-radius: 50%;
+}
+
+.feature__img {
+  width: 24px;
+  height: 24px;
+}
+
+.feature__title {
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.feature__para {
+  color: #718096;
+  line-height: 1.6;
 }
 
 #quality .row {
@@ -253,6 +298,28 @@ header .row {
   bottom: 0;
   width: 80px;
   fill: #6415ff;
+}
+.quality__description {
+  width: 50%;
+}
+
+#quality .section__title {
+  font-size: 44px;
+  line-height: 1.2;
+}
+
+#quality .section__para {
+  color: #718096;
+  line-height: 1.6;
+  margin: 24px 0;
+}
+
+#quality .btn {
+  background: #6415ff;
+  color: white;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 50px;
 }
 #steps .row {
     display: flex;
@@ -284,6 +351,35 @@ header .row {
     position: relative;
     overflow: hidden;
 }
+Looking much better, Brandon! The laptop and steps are now side by side. Next, let's style the steps so they match the example. Add this to style.css, outside any media queries:
+
+#steps .section__title {
+  font-size: 44px;
+  margin: 16px 0 32px;
+}
+
+.step {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.step__number {
+  font-size: 36px;
+  font-weight: 600;
+  color: #cbd5e0;
+}
+
+.step__title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.step__para {
+  color: #718096;
+  line-height: 1.5;
+}
 
 footer {
     padding: 96px 32px;
@@ -313,6 +409,234 @@ footer {
     footer {
         padding: 80px 32px;
     }
+}
+#values .row {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+
+.values__description {
+  flex: 1;
+  min-width: 0;
+}
+
+.values__img {
+  width: 50%;
+  height: auto;
+}
+#values .section__title {
+  font-size: 44px;
+  line-height: 1.2;
+  margin: 16px 0 24px;
+}
+
+#values .section__para {
+  color: #718096;
+  line-height: 1.6;
+}
+
+.values__list {
+  display: flex;
+  gap: 24px;
+  margin: 32px 0;
+}
+
+.value__title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.value__para {
+  color: #718096;
+  line-height: 1.5;
+}
+
+#values .btn {
+  background: #6415ff;
+  color: white;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 50px;
+}
+#values .section__title {
+  font-size: 44px;
+  line-height: 1.2;
+  margin: 16px 0 24px;
+}
+
+#values .section__para {
+  color: #718096;
+  line-height: 1.6;
+}
+
+.values__list {
+  display: flex;
+  gap: 24px;
+  margin: 32px 0;
+}
+
+.value__title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.value__para {
+  color: #718096;
+  line-height: 1.5;
+}
+
+#values .btn {
+  background: #6415ff;
+  color: white;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 50px;
+}
+.steps__img--wrapper {
+  position: relative;
+}
+
+.steps__grid {
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  width: 80px;
+  z-index: -1;
+}
+#pricing .row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.plan {
+  width: 100%;
+  min-width: 0;
+  padding: 32px 16px;
+  text-align: center;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+}
+#pricing .section__title {
+  font-size: 44px;
+  margin: 16px 0;
+}
+
+#pricing .section__para {
+  color: #718096;
+  text-align: center;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.steps__grid {
+  left: 40px;
+}
+
+.plans {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  width: 100%;
+  margin-top: 48px;
+}
+
+.plan {
+  text-align: center;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 32px 16px;
+}
+#pricing .section__tag,
+#pricing .section__title {
+  text-align: center;
+}
+
+#pricing .plans {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+#pricing .plan {
+  width: 100%;
+  min-width: 0;
+}
+.plan__name {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.plan__price {
+  font-size: 48px;
+  font-weight: 700;
+  margin: 16px 0;
+}
+
+.plan__duration {
+  color: #a0aec0;
+  font-weight: 700;
+}
+
+.plan__middle {
+  padding: 32px 0;
+  line-height: 2;
+  border-top: 1px solid #e2e8f0;
+}
+
+.plan__target {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.plan__button {
+  background: #6415ff;
+  color: white;
+  padding: 14px 40px;
+  border: none;
+  border-radius: 50px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.plan__top {
+  padding-bottom: 32px;
+}
+
+.plan__bottom {
+  padding-top: 24px;
+}
+
+.plan:nth-child(2) {
+  background: #6415ff;
+}
+
+.plan:nth-child(2) * {
+  color: white;
+}
+
+.plan:nth-child(2) .plan__button {
+  background: white;
+  color: #6415ff;
+}
+#testimonials .row {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+
+.testimonials__img {
+  width: 45%;
+}
+
+.testimonials__description {
+  flex: 1;
+  min-width: 0;
 }
 
 @media(max-width: 768px) {
@@ -347,16 +671,199 @@ footer {
         width: 80px;
         height: auto;
         z-index: -1;
-    }
-    #steps .row,
+}
+ #steps .row,
+ #steps .row {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+
+.steps__img--wrapper,
+.steps__description {
+  width: 50%;
+}
+
+.steps__img {
+  width: 100%;
+}
+
+.steps__grid {
+  width: 80px;
+}
     #testimonials .row {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
     }
     #pricing .row {
         margin-top: 40px;
     }
+    #testimonials .section__title {
+  font-size: 44px;
+  margin: 16px 0 24px;
 }
+
+#testimonials .section__para,
+.testimonial__para {
+  color: #718096;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.testimonial__rating {
+  color: #f6ad55;
+  margin-bottom: 16px;
+}
+
+.testimonial__title {
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+.testimonial__profile {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.testimonial__name {
+  font-weight: 700;
+}
+#start .row {
+  position: relative;
+  overflow: hidden;
+  background: #6415ff;
+  border-radius: 8px;
+  padding: 80px 48px;
+}
+
+.start__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.start__title {
+  color: white;
+  font-size: 28px;
+  font-weight: 700;
+  max-width: 500px;
+}
+
+.start__buttons {
+  display: flex;
+  gap: 16px;
+}
+
+.start__button {
+  padding: 16px 32px;
+  border: 1px solid white;
+  border-radius: 50px;
+  background: transparent;
+  color: white;
+  font-weight: 700;
+}
+
+.start__button:first-child {
+  background: #f56565;
+  border-color: #f56565;
+}
+
+.start__blob--1,
+.start__blob--2 {
+  display: none;
+}
+footer {
+  position: relative;
+  overflow: hidden;
+}
+
+.footer__blob--1,
+.footer__blob--2 {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  opacity: 0.2;
+  pointer-events: none;
+}
+
+.footer__blob--1 {
+  top: -200px;
+  right: -100px;
+}
+
+.footer__blob--2 {
+  bottom: -200px;
+  left: -100px;
+}
+
+.footer__columns {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.footer__column {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer__column--title,
+.footer__column--link {
+  color: white;
+}
+
+.footer__logo--img {
+  width: 32px;
+}
+.footer__divider {
+  border-top: 1px solid #a78bfa;
+  margin: 48px 0 32px;
+}
+
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer__logo--img {
+  width: 32px;
+}
+
+.footer__logo--text,
+.footer__copyright {
+  color: white;
+}
+
+.footer__socials {
+  display: flex;
+  gap: 16px;
+}
+
+.footer__social--link svg {
+  width: 20px;
+  height: 20px;
+  fill: #243e63;
+}
+.footer__social--link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background: white;
+  border-radius: 50%;
+}
+
 @media(max-width: 640px) {
     .container {
         padding: 80px 0;
