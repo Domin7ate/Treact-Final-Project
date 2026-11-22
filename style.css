@@ -883,3 +883,12 @@ footer {
         margin-bottom: 80px;
     }
 }
+@media (max-width: 1024px) {
+  .nav__links {
+    display: none;
+  }
+
+  .btn__menu {
+    display: block;
+  }
+}
