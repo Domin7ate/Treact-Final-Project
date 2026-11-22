@@ -1056,11 +1056,6 @@ footer {
     max-width: 100%;
     flex: none;
   }
-
-  #quality .section__title {
-    font-size: 32px;
-    overflow-wrap: break-word;
-  }
 }
 @media (max-width: 768px) {
   #quality .section__title {
