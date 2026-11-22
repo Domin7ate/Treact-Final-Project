@@ -952,3 +952,30 @@ footer {
     gap: 32px;
   }
 }
+@media (max-width: 768px) {
+  #start .row {
+    padding: 48px 24px;
+  }
+
+  .start__row {
+    flex-direction: column;
+    text-align: center;
+    gap: 24px;
+  }
+
+  .start__title {
+    font-size: 24px;
+    max-width: 100%;
+  }
+
+  .start__buttons {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  .start__button {
+    width: 100%;
+    max-width: 240px;
+  }
+}
