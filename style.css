@@ -1069,3 +1069,21 @@ footer {
     line-height: 1.6;
   }
 }
+@media (max-width: 768px) {
+  #pricing .plan {
+    padding: 24px 16px;
+  }
+
+  #pricing .plan__price {
+    font-size: 32px;
+  }
+
+  #pricing .plan__middle {
+    padding: 16px 0;
+    line-height: 1.6;
+  }
+
+  #pricing .plan__bottom {
+    padding-top: 12px;
+  }
+}
