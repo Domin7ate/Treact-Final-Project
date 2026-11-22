@@ -1087,3 +1087,20 @@ footer {
     padding-top: 12px;
   }
 }
+@media (max-width: 768px) {
+  #pricing .plans {
+    width: 100%;
+    max-width: 100%;
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  #pricing .plan {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  #pricing .plan__price {
+    font-size: 32px;
+  }
+}
