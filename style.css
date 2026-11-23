@@ -640,8 +640,8 @@ footer {
 }
 
 .plans {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  display: wrap;
   gap: 24px;
   width: 100%;
   margin-top: 48px;
@@ -663,9 +663,9 @@ footer {
 }
 
 #pricing .plans {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  display: flex;
+  display: wrap;
 }
-
 #pricing .plan {
   width: 100%;
   min-width: 0;
