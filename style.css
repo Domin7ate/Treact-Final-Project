@@ -1136,6 +1136,33 @@ footer {
     max-width: 240px;
   }
 }
+.testimonial__buttons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.testimonial__button {
+  background-color: #edf2f7;
+  border: none;
+  border-radius: 50%;
+  padding: 16px;
+  cursor: pointer;
+}
+
+.testimonial__button svg {
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+
+.testimonial__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
 @media (max-width: 768px) {
   #testimonials .row {
     flex-direction: column;
@@ -1260,5 +1287,16 @@ footer {
 
   #pricing .plan__price {
     font-size: 32px;
+  }
+}
+@media (max-width: 1024px) {
+  .features {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .features {
+    grid-template-columns: 1fr;
   }
 }
