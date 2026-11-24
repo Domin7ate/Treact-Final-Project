@@ -27,6 +27,8 @@ body {
 
 .container {
   padding: 96px 0;
+  max-width: 1024px;
+  margin: 0;
 }
 
 .purple {
@@ -242,6 +244,7 @@ nav {
   flex: 1;
   min-width: 0;
   max-width: 100%;
+  text-align: center;
 }
 .header__img,
 .header__customers {
