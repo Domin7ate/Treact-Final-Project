@@ -27,8 +27,6 @@ body {
 
 .container {
   padding: 96px 0;
-  max-width: 1024px;
-  margin: 0;
 }
 
 .purple {
@@ -241,10 +239,8 @@ nav {
 
 .header__description,
 .header__img--wrapper {
-  flex: 1;
   min-width: 0;
   max-width: 100%;
-  text-align: center;
 }
 .header__img,
 .header__customers {
@@ -323,8 +319,6 @@ header .row {
   align-items: flex-start;
   gap: 16px;
   padding: 32px 8px;
-  text-align: center;
-  align-items: center;
 
 }
 #features .section__tag {
@@ -485,7 +479,8 @@ header .row {
   display: flex;
   gap: 24px;
   margin-bottom: 32px;
-  flex-direction: column;
+  flex-direction: row;
+  text-align: left;
 }
 
 .step__number {
@@ -532,7 +527,7 @@ footer {
 }
 }
   header .row {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
   }
   footer {
@@ -570,7 +565,7 @@ footer {
   display: flex;
   gap: 24px;
   margin: 32px 0;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 .value__title {
@@ -584,6 +579,7 @@ footer {
 .value__para {
   color: #718096;
   line-height: 1.5;
+  text-align: left;
 }
 
 #values .btn {
@@ -612,11 +608,9 @@ footer {
 
 .value__title {
   display: flex;
-  align-items: center;
   gap: 12px;
   font-weight: 700;
   margin-bottom: 12px;
-  justify-content: center;
 }
 
 .value__para {
@@ -1069,7 +1063,7 @@ footer {
   }
 }
     .btn__menu {
-    display: block;
+    display: none;
   }
 @media (max-width: 768px) {
   #pricing .plans {
